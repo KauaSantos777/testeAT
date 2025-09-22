@@ -1,0 +1,31 @@
+Automação de Preenchimento de Planilha com PyAutoGUI
+
+Este script utiliza a biblioteca PyAutoGUI para automatizar o processo de criação e preenchimento de uma planilha no Microsoft Excel.
+
+Funcionalidades
+
+Abre automaticamente o Excel no Windows.
+
+Cria uma nova planilha em branco.
+
+Preenche a primeira coluna com os cabeçalhos: Produtos, Valores, Quantidades e Cores.
+
+Insere, linha a linha, os dados definidos em listas Python para cada categoria.
+
+Dados inseridos
+
+Produtos: Caneta, Lápis, Caderno, Borracha, Apontador.
+
+Valores: 2, 3, 12.00, 1, 5.
+
+Quantidades: 10, 20, 5, 15, 7.
+
+Cores: azul, vermelho, amarelo, verde, preto.
+
+Observações
+
+As coordenadas de clique (x, y) foram definidas manualmente e podem variar de acordo com o layout da tela e a versão do Excel.
+
+Caso seja necessário, ajuste as posições de clique utilizando o método pyautogui.position() para capturar a posição correta do mouse.
+
+O tempo de pausa (time.sleep) foi inserido para garantir que as ações sejam executadas sem falhas devido a atrasos de carregamento do Excel.
